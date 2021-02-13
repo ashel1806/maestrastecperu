@@ -10,57 +10,59 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="menu-container">
-                <div class="menu-logo">
-                    <a href="index.html">
-                        <img src="LOGO.png" alt="">
-                    </a>
-                </div>
-                <div class="enlaces-nav">
-                    <a href="#objetivos">Misión</a> 
-                    <a href="#equipo">Equipo</a> 
-                    <a href="./talleres/talleres.html">Talleres</a> 
-                    <a href="./formulario/contacto.html" class="contacto">Contactanos</a>
-                </div>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html"><img src="LOGO.png" alt=""></a>
             </div>
-        </nav>
-    </header>
-    <header class="header">
-        <div class="grid">
-            <div class="textos-hero">
-                <h1 class="weight-600">
-                    Niños que juegan, niños que <span class="weight-400">aprenden</span>
-                </h1>
-                <p class="parrafo">Manejamos una metodología de enseñaza denominada <i>"Metodología Lúdica"</i>, con la cual tus hijos aprenderan
-                    diversas hablidades a través de pequeños juegos.
-                </p>
-                <a href="./talleres/talleres.html" class="cta">Empezar ></a>
-            </div>
-            <div class="img-hero">
-                <img src="ilustracion1.svg" alt="maestrastecperu" class="img">
+            <nav id="site-nav" class="site-nav"> 
+                <ul>
+                    <li><a href="#objetivos"><i class="fas fa-bullseye site-nav--icon"></i>Mision</a></li>
+                    <li><a href="#equipo"><i class="fas fa-user-friends site-nav--icon"></i>Equipo</a></li>
+                    <li><a href="./talleres/talleres.html"><i class="fas fa-briefcase site-nav--icon"></i>Talleres</a></li>
+                    <li><a href="./formulario/contacto.html" class="contacto"><i class="fas fa-address-card site-nav--icon"></i>Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div id="menu-toogle" class="menu-toogle" onclick="cambiarClase()">
+                <div class="hamburger"></div>
             </div>
         </div>
     </header>
-
+        <div class="hero-header">
+            <div class="grid">
+                <div class="textos-hero">
+                    <h1 class="weight-600">
+                        Niños que juegan, niños que <span class="weight-400">aprenden</span>
+                    </h1>
+                    <p class="parrafo">Manejamos una metodología de enseñaza denominada <i>"Metodología Lúdica"</i>, con la cual tus hijos aprenderan
+                        diversas hablidades a través de pequeños juegos.
+                    </p>
+                    <a href="./talleres/talleres.html" class="cta">Empezar ></a>
+                </div>
+                <div class="img-hero">
+                    <img src="ilustracion1.svg" alt="maestrastecperu" class="img">
+                </div>
+            </div>
+        </div>
+        
     <main>
         <section class="services">
             <div class="grid">
                 <div class="items">
                     <div class="item">
-                        <i class="fas fa-child"></i>
+                        <i class="fas fa-child services-icon"></i>
                         <h3 class="titulo-services">Lorem ipsum dolor sit.</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                     </div>
                     
                     <div class="item">                    
-                        <i class="fas fa-home"></i>
+                        <i class="fas fa-home services-icon"></i>
                         <h3 class="titulo-services">Lorem ipsum dolor sit.</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                     </div>
                     
                     <div class="item">
-                        <i class="fas fa-pencil-ruler"></i>
+                        <i class="fas fa-pencil-ruler services-icon"></i>
                         <h3 class="titulo-services">Lorem ipsum dolor sit.</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                     </div>
@@ -81,7 +83,8 @@
                 </div>
             </div>
         </section>
-        <section id="objetivos" class="mission grid">
+        <a name="objetivos" id="objetivos"></a>
+        <section class="mission grid">
             <div class="textos-mission">
                 <div class="texto-mission">
                     <h3>Objetivo 1</h3>
@@ -101,7 +104,8 @@
             </div>
         </section>
         
-        <section id="equipo" class="our-team">
+        <a name="equipo" id="equipo"></a>
+        <section class="our-team">
            <div class="grid">
                <h2>Nuestro Equipo</h2>
                <div class="persons">
@@ -142,5 +146,6 @@
 
 
     <script src="https://kit.fontawesome.com/396a7376e5.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
 </html>

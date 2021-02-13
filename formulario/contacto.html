@@ -9,21 +9,25 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <div class="menu-container">
-            <div class="menu-logo">
-                <a href="../index.html">
-                    <img src="../LOGO.png" alt="">
-                </a>
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="../index.html"><img src="../LOGO.png" alt=""></a>
             </div>
-            <div class="enlaces-nav">
-                <a href="#servicios">Servicios</a> 
-                <a href="#">Mision</a> 
-                <a href="#">Equipo</a> 
-                <a href="./formulario/contacto.html" class="contacto">Contactanos</a>
+            <nav id="site-nav" class="site-nav"> 
+                <ul>
+                    <li><a href="../index.html/#objetivos"><i class="fas fa-bullseye site-nav--icon"></i>Mision</a></li>
+                    <li><a href="../index.html/#equipo"><i class="fas fa-user-friends site-nav--icon"></i>Equipo</a></li>
+                    <li><a href="../talleres/talleres.html"><i class="fas fa-briefcase site-nav--icon"></i>Talleres</a></li>
+                    <li><a href="../formulario/contacto.html" class="contacto"><i class="fas fa-address-card site-nav--icon"></i>Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div id="menu-toogle" class="menu-toogle" onclick="cambiarClase()">
+                <div class="hamburger"></div>
             </div>
         </div>
-    </nav>
+    </header>
 
     <div class="container">
         <span class="big-circle"></span>
@@ -64,7 +68,6 @@
                     </div>
                 </div>
             </div>
-
 
             <div class="contact-form">
                 <span class="circle one"></span>
@@ -120,7 +123,7 @@
             </div>
     </footer>
 
-    <script src="app.js"></script>
+    <script src="contacto.js"></script>
     <script src="https://kit.fontawesome.com/396a7376e5.js" crossorigin="anonymous"></script>
 </body>
 </html>
