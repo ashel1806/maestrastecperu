@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="../index.html"><img src="../LOGO.png" alt=""></a>
+            </div>
+            <nav id="site-nav" class="site-nav"> 
+                <ul>
+                    <li><a href="../index.html/#objetivos"><i class="fas fa-bullseye site-nav--icon"></i>Mision</a></li>
+                    <li><a href="../index.html/#equipo"><i class="fas fa-user-friends site-nav--icon"></i>Equipo</a></li>
+                    <li><a href="../talleres/talleres.html"><i class="fas fa-briefcase site-nav--icon"></i>Talleres</a></li>
+                    <li><a href="../formulario/contacto.html" class="contacto"><i class="fas fa-address-card site-nav--icon"></i>Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div id="menu-toogle" class="menu-toogle" onclick="cambiarClase()">
+                <div class="hamburger"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <span class="big-circle"></span>
+        <img src="./img/shape.png" class="square" alt="">
+        <div class="form">
+            <div class="contact-info">
+                <h3 class="title">Let´s get in touch</h3>
+                <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus eum minima necessitatibus reprehenderit nam.  
+                </p>
+
+                <div class="info">
+                    <div class="information">
+                        <img src="./img/location.png" alt="" class="icon">
+                        <p>92 cherry Drive Uniondale, NY 11553</p>
+                    </div>
+
+                    <div class="information">
+                        <img src="./img/email.png" alt="" class="icon">
+                        <p>lorem@ipsum.com</p>
+                    </div>
+
+                    <div class="information">
+                        <img src="./img/phone.png" alt="" class="icon">
+                        <p>987654321 / 123456789</p>
+                    </div>
+                </div>
+
+                <div class="social-media">
+                    <p>Connect with us :</p>
+                    <div class="social-icons">
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <span class="circle one"></span>
+                <span class="circle two"></span>
+
+                <form action="contacto.html" autocomplete="off">
+                    <h3 class="title">Contactanos</h3>
+                    <div class="input-container">
+                        <input type="text" name="nombre" class="input">
+                        <label for="">Nombre</label>
+                        <span>Nombre</span>
+                    </div>
+
+                    <div class="input-container">
+                        <input type="email" name="email" class="input">
+                        <label for="">Email</label>
+                        <span>Email</span>
+                    </div>
+
+                    <div class="input-container">
+                        <input type="tel" name="telefono" class="input">
+                        <label for="">Teléfono</label>
+                        <span>Teléfono</span>
+                    </div>
+
+                    <div class="input-container textarea">
+                        <textarea name="message" class="input"></textarea>
+                        <label for="">Mensaje</label>
+                        <span>Mensaje</span>
+                    </div>
+                    <input type="submit" value="Send" class="btn">
+                </form>
+            </div>
+        </div>
+    </div>
+
+   
+    <footer>
+        <div class="grid">
+            <div class="textos-footer">
+                <h2 class="subtitulo">¡Siguenos!</h2>
+            </div>
+            <div class="footer-item1">
+                <a href="https://www.facebook.com/Maestrastecperu" target="blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+            <div class="footer-item2">
+                <a href="https://www.instagram.com/maestrastecperu/" target="blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            </div>
+    </footer>
+
+    <script src="contacto.js"></script>
+    <script src="https://kit.fontawesome.com/396a7376e5.js" crossorigin="anonymous"></script>
+</body>
+</html>
